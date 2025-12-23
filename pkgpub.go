@@ -9,8 +9,8 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"regexp"
 	"runtime"
-	"slices"
 	"sort"
 	"strings"
 	"sync"
@@ -106,6 +106,16 @@ func main() {
 			}
 			defer func() { <-scan_sem }()
 
+			var ignore_regs []*regexp.Regexp
+			for _, pattern := range repo_cfg.Ignore {
+				reg, err := regexp.Compile(pattern)
+				if err != nil {
+					log.Printf("cannot `regexp.Compile`(%s): %s", pattern, err.Error())
+					continue
+				}
+				ignore_regs = append(ignore_regs, reg)
+			}
+
 			cmd := exec.Command("git", "ls-remote", "--tags", repo_cfg.Url)
 			out, err := cmd.Output()
 			if err != nil {
@@ -143,7 +153,14 @@ func main() {
 			}
 
 			for tag, hash := range remote_tags {
-				if slices.Contains(repo_cfg.Ignore, tag) {
+				ignored := false
+				for _, reg := range ignore_regs {
+					if reg.MatchString(tag) {
+						ignored = true
+						break
+					}
+				}
+				if ignored {
 					continue
 				}
 
