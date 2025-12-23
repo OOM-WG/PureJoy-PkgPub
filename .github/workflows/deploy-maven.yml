@@ -27,7 +27,7 @@ jobs:
       - name: Checkout State
         uses: actions/checkout@v5
         with:
-          ref: dist-maven
+          ref: maven
           path: dist-maven
           fetch-depth: 1
           submodules: recursive
@@ -61,7 +61,7 @@ jobs:
         if: steps.check.outputs.result == 'true'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: dist-maven
+          branch: maven
           folder: dist-maven
           clean: true
           single-commit: true
