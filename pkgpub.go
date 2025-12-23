@@ -46,20 +46,20 @@ type BuildTask struct {
 }
 
 var (
-	cfg_file   = flag.String("config", "maven.fvv", "config file path")
-	out_dir    = flag.String("output", "dist-maven", "output directory")
-	check_only = flag.Bool("check", false, "only check")
-	state_file string
-	m2_repo    string
-	err        error
+	cfg_file    = flag.String("config", "maven.fvv", "config file path")
+	out_dir     = flag.String("output", "dist-maven", "output directory")
+	check_only  = flag.Bool("check", false, "only check")
+	domain_file string
+	state_file  string
+	err         error
 )
 
 func main() {
 	flag.Parse()
+	domain_file = filepath.Join(*out_dir, "CNAME")
 	state_file = filepath.Join(*out_dir, "maven.fvv")
-	m2_repo = filepath.Join(*out_dir, "repository")
 
-	if err = os.MkdirAll(m2_repo, os.ModePerm); err != nil {
+	if err = os.MkdirAll(*out_dir, os.ModePerm); err != nil {
 		log.Fatalf("cannot `os.MkdirAll`: %s", err.Error())
 	}
 
@@ -243,6 +243,11 @@ func main() {
 	if _, err = os.Stat(local_m2); err != nil {
 		return
 	}
+	if domain_fwv := cfg_fwv.SubNode(true, "Domain"); domain_fwv.IsNotEmpty() {
+		if err = os.WriteFile(domain_file, []byte(domain_fwv.String()), os.ModePerm); err != nil {
+			log.Printf("cannot `os.WriteFile`: %s", err.Error())
+		}
+	}
 	if err = filepath.Walk(local_m2, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
@@ -251,7 +256,7 @@ func main() {
 		if err != nil {
 			return err
 		}
-		dst_path := filepath.Join(m2_repo, rel)
+		dst_path := filepath.Join(*out_dir, rel)
 		if info.Name() == "maven-metadata-local.xml" {
 			dst_path = filepath.Join(filepath.Dir(dst_path), "maven-metadata.xml")
 		}

@@ -1,3 +1,4 @@
+Domain = "maven.oom-wg.dev"
 Repos = [
 	{
 		Url = "https://github.com/OOM-WG/FVV.git"
