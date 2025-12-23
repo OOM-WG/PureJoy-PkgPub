@@ -187,6 +187,11 @@ func main() {
 		os.Exit(-1)
 	}
 
+	if len(tasks) == 0 {
+		log.Printf("nothing to do")
+		return
+	}
+
 	sort.Slice(tasks, func(a, b int) bool {
 		return tasks[a].Index < tasks[b].Index
 	})
@@ -197,6 +202,43 @@ func main() {
 	}
 	local_m2 := filepath.Join(home_dir, ".m2", "repository")
 	_ = os.RemoveAll(local_m2)
+	if err = filepath.Walk(*out_dir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		rel, err := filepath.Rel(*out_dir, path)
+		if err != nil {
+			return err
+		}
+		dst_path := filepath.Join(local_m2, rel)
+		if info.Name() == "maven-metadata.xml" {
+			dst_path = filepath.Join(filepath.Dir(dst_path), "maven-metadata-local.xml")
+		}
+
+		if info.IsDir() {
+			return os.MkdirAll(dst_path, info.Mode())
+		}
+		if !info.Mode().IsRegular() {
+			return nil
+		}
+
+		src_file, err := os.Open(path)
+		if err != nil {
+			return err
+		}
+		defer src_file.Close()
+		dst_file, err := os.Create(dst_path)
+		if err != nil {
+			return err
+		}
+		defer dst_file.Close()
+		if _, err := io.Copy(dst_file, src_file); err != nil {
+			return err
+		}
+		return nil
+	}); err != nil {
+		log.Fatalf("cannot `filepath.Walk`: %s", err.Error())
+	}
 
 	for _, task := range tasks {
 		log.Printf("building: %s -> %s", task.Config.Url, task.Tag)
@@ -300,6 +342,6 @@ func main() {
 		}
 		return nil
 	}); err != nil {
-		log.Printf("cannot `filepath.Walk`: %s", err.Error())
+		log.Fatalf("cannot `filepath.Walk`: %s", err.Error())
 	}
 }
