@@ -19,7 +19,6 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version: '>=1.25.0'
-          cache: true
       - name: Checkout Source
         uses: actions/checkout@v5
         with:
@@ -45,7 +44,6 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '25'
-          cache: 'gradle'
       - name: Build Packages
         if: steps.check.outputs.result == 'true'
         run: go run .
