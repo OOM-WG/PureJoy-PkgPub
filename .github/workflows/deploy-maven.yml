@@ -1,0 +1,59 @@
+name: PkgPub Maven Deployer
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: maven-deployer
+  cancel-in-progress: false
+
+jobs:
+  deploy-maven:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: '>=1.25.0'
+      - name: Checkout Source
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+          submodules: recursive
+      - name: Checkout State
+        uses: actions/checkout@v5
+        with:
+          ref: dist-maven
+          path: maven
+          fetch-depth: 1
+          submodules: recursive
+        continue-on-error: true
+      - name: Check Updates
+        id: check
+        run: |
+          mkdir -p dist-maven
+          go mod tidy
+          echo "result=$(go run . -check && echo -n true || echo -n false)" >> $GITHUB_OUTPUT
+      - name: Setup JDK
+        if: steps.check.outputs.result == 'true'
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu'
+          java-version: '25'
+      - name: Build Packages
+        if: steps.check.outputs.result == 'true'
+        run: go run .
+      - name: Deploy Maven
+        if: steps.check.outputs.result == 'true'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: dist-maven
+          folder: dist-maven
+          clean: true
+          single-commit: true
+          git-config-name: oom-wg
+          git-config-email: oom@200ok.work

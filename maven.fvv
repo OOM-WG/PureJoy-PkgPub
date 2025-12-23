@@ -1,0 +1,12 @@
+Repos = [
+	{
+		Url = "https://github.com/OOM-WG/FVV.git"
+		Dir = "kotlin"
+	}
+	{
+		Url = "https://github.com/OOM-WG/PureJoy-MultiLang.git"
+	}
+	{
+		Url = "https://github.com/OOM-WG/PureJoy-CCC.git"
+	}
+]
