@@ -18,6 +18,11 @@ import (
 	"app.niggergo.work/fvv"
 )
 
+type Config struct {
+	Domain string        `fvv:"Domain,omitempty"`
+	Repos  []*RepoConfig `fvv:"Repos"`
+}
+
 type RepoConfig struct {
 	Url    string   `fvv:"Url"`
 	Dir    string   `fvv:"Dir,omitempty"`
@@ -63,7 +68,7 @@ func main() {
 		log.Fatalf("cannot `os.MkdirAll`: %s", err.Error())
 	}
 
-	var configs []*RepoConfig
+	var tgt_cfg *Config
 	raw_cfg, err := os.ReadFile(*cfg_file)
 	if err != nil {
 		log.Fatalf("cannot `os.ReadFile`: %s", err.Error())
@@ -71,7 +76,7 @@ func main() {
 	cfg_fwv := fvv.NewFVVV()
 	if err = cfg_fwv.ParseString(string(raw_cfg)); err != nil {
 		log.Fatalf("cannot `fvv.ParseString`: %s", err.Error())
-	} else if err = cfg_fwv.SubNode(true, "Repos").Unmarshal(&configs); err != nil {
+	} else if err = cfg_fwv.Unmarshal(&tgt_cfg); err != nil {
 		log.Fatalf("cannot `fvv.Unmarshal`: %s", err.Error())
 	}
 
@@ -95,7 +100,7 @@ func main() {
 	scan_ctx_cancel := make(chan struct{})
 	scan_sem := make(chan struct{}, runtime.NumCPU())
 	var scan_wg sync.WaitGroup
-	for idx, idx_cfg := range configs {
+	for idx, idx_cfg := range tgt_cfg.Repos {
 		scan_wg.Add(1)
 		go func(index int, repo_cfg *RepoConfig) {
 			defer scan_wg.Done()
@@ -187,11 +192,16 @@ func main() {
 		os.Exit(-1)
 	}
 
+	if tgt_cfg.Domain != "" {
+		if err = os.WriteFile(domain_file, []byte(tgt_cfg.Domain), os.ModePerm); err != nil {
+			log.Printf("cannot `os.WriteFile`: %s", err.Error())
+		}
+	}
+
 	if len(tasks) == 0 {
 		log.Printf("nothing to do")
 		return
 	}
-
 	sort.Slice(tasks, func(a, b int) bool {
 		return tasks[a].Index < tasks[b].Index
 	})
@@ -239,6 +249,8 @@ func main() {
 	}); err != nil {
 		log.Fatalf("cannot `filepath.Walk`: %s", err.Error())
 	}
+	_ = os.RemoveAll(filepath.Join(local_m2, "CNAME"))
+	_ = os.RemoveAll(filepath.Join(local_m2, "maven.fvv"))
 
 	for _, task := range tasks {
 		log.Printf("building: %s -> %s", task.Config.Url, task.Tag)
@@ -301,11 +313,6 @@ func main() {
 
 	if _, err = os.Stat(local_m2); err != nil {
 		return
-	}
-	if domain_fwv := cfg_fwv.SubNode(true, "Domain"); domain_fwv.IsNotEmpty() {
-		if err = os.WriteFile(domain_file, []byte(domain_fwv.String()), os.ModePerm); err != nil {
-			log.Printf("cannot `os.WriteFile`: %s", err.Error())
-		}
 	}
 	if err = filepath.Walk(local_m2, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
