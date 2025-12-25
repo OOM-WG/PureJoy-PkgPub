@@ -32,6 +32,12 @@ jobs:
           fetch-depth: 1
           submodules: recursive
         continue-on-error: true
+      - name: Cache Go
+        uses: actions/cache@v5
+        with:
+          path: ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-go-
       - name: Check Updates
         id: check
         run: |
