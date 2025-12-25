@@ -216,12 +216,23 @@ func main() {
 		if err != nil {
 			return err
 		}
+		name := info.Name()
+		if name == ".git" {
+			if info.IsDir() {
+				return filepath.SkipDir
+			}
+			return nil
+		}
+		if name == "CNAME" || name == "maven.fvv" {
+			return nil
+		}
+
 		rel, err := filepath.Rel(*out_dir, path)
 		if err != nil {
 			return err
 		}
 		dst_path := filepath.Join(local_m2, rel)
-		if info.Name() == "maven-metadata.xml" {
+		if name == "maven-metadata.xml" {
 			dst_path = filepath.Join(filepath.Dir(dst_path), "maven-metadata-local.xml")
 		}
 
@@ -249,8 +260,6 @@ func main() {
 	}); err != nil {
 		log.Fatalf("cannot `filepath.Walk`: %s", err.Error())
 	}
-	_ = os.RemoveAll(filepath.Join(local_m2, "CNAME"))
-	_ = os.RemoveAll(filepath.Join(local_m2, "maven.fvv"))
 
 	for _, task := range tasks {
 		log.Printf("building: %s -> %s", task.Config.Url, task.Tag)
