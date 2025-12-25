@@ -38,7 +38,7 @@ jobs:
           mkdir -p dist-maven
           go mod tidy
           echo "result=$(go run . -check && echo -n true || echo -n false)" >> $GITHUB_OUTPUT
-      - name: Setup Cache
+      - name: Cache Gradle
         if: steps.check.outputs.result == 'true'
         uses: actions/cache@v5
         with:
@@ -46,9 +46,8 @@ jobs:
             ~/.gradle/caches
             ~/.gradle/wrapper
             ~/.konan
-            ~/go/pkg/mod
-          key: ${{ runner.os }}-cache-${{ github.run_id }}
-          restore-keys: ${{ runner.os }}-cache-
+          key: ${{ runner.os }}-gradle-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-gradle-
       - name: Setup JDK
         if: steps.check.outputs.result == 'true'
         uses: actions/setup-java@v5
