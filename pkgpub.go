@@ -83,7 +83,7 @@ func main() {
 	var tgt_state *State
 	raw_state, err := os.ReadFile(state_file)
 	if err == nil {
-		if err = fvv.NewFVVV().ParseStringTo(string(raw_state), &tgt_state); err != nil {
+		if err = fvv.NewFVVV().ParseString(string(raw_state), &tgt_state); err != nil {
 			log.Fatalf("cannot `fvv.ParseStringTo`: %s", err.Error())
 		}
 	}
