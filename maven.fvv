@@ -5,7 +5,7 @@ Repos = [
 		Dir = "kotlin"
 	}
 	{
-		Url = "https://github.com/OOM-WG/PureJoy-MultiLang.git"
+		Url = "https://github.com/OOM-WG/PureJoy-FYL.git"
 	}
 	{
 		Url = "https://github.com/OOM-WG/PureJoy-CCC.git"
