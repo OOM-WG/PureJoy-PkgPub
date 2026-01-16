@@ -1,1 +1,1 @@
-# [PureJoy - PkgPub](https://app.niggergo.work/docs/purejoy/pkgpub/)
+# [PureJoy - PkgPub](https://app.niggergo.work/purejoy/pkgpub/)
