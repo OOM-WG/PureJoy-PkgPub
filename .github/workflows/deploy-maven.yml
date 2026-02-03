@@ -2,7 +2,7 @@ name: PkgPub Maven Deployer
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/33 * * * *'
   workflow_dispatch:
 
 concurrency:
