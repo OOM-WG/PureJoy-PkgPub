@@ -71,5 +71,5 @@ jobs:
           folder: dist-maven
           clean: true
           single-commit: true
-          git-config-name: oom-wg
-          git-config-email: oom@200ok.work
+          git-config-name: oom-wg[bot]
+          git-config-email: 259484229+oom-wg[bot]@users.noreply.github.com
