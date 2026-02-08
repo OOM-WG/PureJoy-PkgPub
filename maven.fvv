@@ -1,8 +1,7 @@
 Domain = "maven.oom-wg.dev"
 Repos = [
 	{
-		Url = "https://github.com/OOM-WG/FVV.git"
-		Dir = "kotlin"
+		Url = "https://github.com/FVV-Lang/FVV.kt"
 	}
 	{
 		Url = "https://github.com/OOM-WG/PureJoy-FYL.git"
