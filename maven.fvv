@@ -8,7 +8,6 @@ Repos = [
 		Url = "https://github.com/OOM-WG/PureJoy-FYL.git"
 	}
 	{
-		Url = "https://github.com/ShIroRRen/NGA-SDK.git"
-		Dir = "src/kotlin"
+		Url = "https://github.com/NGA-SDK/NGA-SDK.kt"
 	}
 ]
