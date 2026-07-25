@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "systxt",
+    "version": "2.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "systxt-2.3.aar",
+          "url": "systxt-2.3.aar",
+          "size": 2576,
+          "sha512": "28ea56ce6c5fb14e98e0e5f753ec1ac4a3264f93f7c620a756b97c2299ba3cfc8773a55dde39b8092aa02ee280b93bec62438d72760eaa657e344def76a06f74",
+          "sha256": "a6c5eb81d23fe4734f0ba57116ae56b956e8843c6edd036a2a0a03ef21143299",
+          "sha1": "cfc28e79a1545ec2a97a2227d47800bdb3ad77fa",
+          "md5": "bf5cd70e836b4cc1b90572e59f166220"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "systxt-2.3.aar",
+          "url": "systxt-2.3.aar",
+          "size": 2576,
+          "sha512": "28ea56ce6c5fb14e98e0e5f753ec1ac4a3264f93f7c620a756b97c2299ba3cfc8773a55dde39b8092aa02ee280b93bec62438d72760eaa657e344def76a06f74",
+          "sha256": "a6c5eb81d23fe4734f0ba57116ae56b956e8843c6edd036a2a0a03ef21143299",
+          "sha1": "cfc28e79a1545ec2a97a2227d47800bdb3ad77fa",
+          "md5": "bf5cd70e836b4cc1b90572e59f166220"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "systxt-2.3-sources.jar",
+          "url": "systxt-2.3-sources.jar",
+          "size": 1676,
+          "sha512": "96b776161feac5351ea701a4f371fcd9d4a4f5f87590403b7538f92e07a468b8bd2b6df4ccab2848a98b342965b63fd0baa657fca78fd5b658bf4a2df6a50834",
+          "sha256": "171320a7bd87f755624b9e99f0905e73d566f861e964cf9dfda4254d3cc01e19",
+          "sha1": "7cc0535aaa536f8d9ac47a039645460d5e3a7b87",
+          "md5": "462e99e88f71580ae56403421c5ec446"
+        }
+      ]
+    }
+  ]
+}

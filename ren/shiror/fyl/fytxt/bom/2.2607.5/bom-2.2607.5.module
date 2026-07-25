@@ -1,0 +1,78 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ren.shiror.fyl.fytxt",
+    "module": "bom",
+    "version": "2.2607.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "ren.shiror.fyl.fytxt",
+          "module": "core",
+          "version": {
+            "requires": "2.2607.5"
+          }
+        },
+        {
+          "group": "ren.shiror.fyl.fytxt",
+          "module": "compose",
+          "version": {
+            "requires": "2.2607.5"
+          }
+        },
+        {
+          "group": "ren.shiror.fyl.fytxt",
+          "module": "systxt",
+          "version": {
+            "requires": "2.2607.5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "ren.shiror.fyl.fytxt",
+          "module": "core",
+          "version": {
+            "requires": "2.2607.5"
+          }
+        },
+        {
+          "group": "ren.shiror.fyl.fytxt",
+          "module": "compose",
+          "version": {
+            "requires": "2.2607.5"
+          }
+        },
+        {
+          "group": "ren.shiror.fyl.fytxt",
+          "module": "systxt",
+          "version": {
+            "requires": "2.2607.5"
+          }
+        }
+      ]
+    }
+  ]
+}

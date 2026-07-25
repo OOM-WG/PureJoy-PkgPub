@@ -1,0 +1,87 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "work.niggergo.app",
+    "module": "gendoki",
+    "version": "1.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "gendoki-1.2.aar",
+          "url": "gendoki-1.2.aar",
+          "size": 3621,
+          "sha512": "0320ded3bcd0dfd3a0eab3ef9632020a4b991ef7509d602357eb5d51ffa15b252572cab3f152988c207f6afb2e17260a703e83ea4ccee46df68ca9ac728a23d7",
+          "sha256": "661799b4c590b21f0681068998d09e7e7b34fe2972ef482e9323f044e882a779",
+          "sha1": "7fc1f14f83092c3eb14f8b732aa3b48d0ca6214a",
+          "md5": "13abff594bb47b8c480c0915c914dbf4"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gendoki-1.2.aar",
+          "url": "gendoki-1.2.aar",
+          "size": 3621,
+          "sha512": "0320ded3bcd0dfd3a0eab3ef9632020a4b991ef7509d602357eb5d51ffa15b252572cab3f152988c207f6afb2e17260a703e83ea4ccee46df68ca9ac728a23d7",
+          "sha256": "661799b4c590b21f0681068998d09e7e7b34fe2972ef482e9323f044e882a779",
+          "sha1": "7fc1f14f83092c3eb14f8b732aa3b48d0ca6214a",
+          "md5": "13abff594bb47b8c480c0915c914dbf4"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "gendoki-1.2-sources.jar",
+          "url": "gendoki-1.2-sources.jar",
+          "size": 1556,
+          "sha512": "31620f807344a0bc097748bb06d653230dee1e9cb9170361ef77b679961558cfaa7a3631251efa37413cbd86732a40f24eb531f3be2cb83ff2125df99d78220a",
+          "sha256": "7dd2f327035f4dfe326e74d6439da110d28489b232fe1112d4abae2bdd607cee",
+          "sha1": "dc463377c8fdb3e205c62100681d461d5d65724e",
+          "md5": "ba76693094671f9b6e2cd503d54e8373"
+        }
+      ]
+    }
+  ]
+}

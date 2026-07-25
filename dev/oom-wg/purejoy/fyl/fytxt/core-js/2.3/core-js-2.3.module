@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.3/core-2.3.module",
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "core",
+    "version": "2.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-js.klib",
+          "url": "core-js-2.3.klib",
+          "size": 15352,
+          "sha512": "d6a56b42ee0a78de2ce52e6052002c3b9bc16f8aaa578ccbb97d7166a5f1a4b01bd490ba8f191f886ee40ba984e6836fd20b9da37db16a666105dba483b0d802",
+          "sha256": "f0f0f9fd6d5447531fb45976012f35029806be08ecbcea7db21eaedd3b3f2f47",
+          "sha1": "c12e7c74e137635b6b88c51917016e0b3a722a05",
+          "md5": "f3c952264e43c638a4cb3360e76165ca"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-browser",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-js.klib",
+          "url": "core-js-2.3.klib",
+          "size": 15352,
+          "sha512": "d6a56b42ee0a78de2ce52e6052002c3b9bc16f8aaa578ccbb97d7166a5f1a4b01bd490ba8f191f886ee40ba984e6836fd20b9da37db16a666105dba483b0d802",
+          "sha256": "f0f0f9fd6d5447531fb45976012f35029806be08ecbcea7db21eaedd3b3f2f47",
+          "sha1": "c12e7c74e137635b6b88c51917016e0b3a722a05",
+          "md5": "f3c952264e43c638a4cb3360e76165ca"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "core-js-sources.jar",
+          "url": "core-js-2.3-sources.jar",
+          "size": 2199,
+          "sha512": "50e00cf8b5f0021c6af7e7293256d0acd35c9fe2501c30ff16acb077b64e94f58346bc10f810d4702033876dcd6bb728043ea3f2a0fa2f7a05c9e69aad998baa",
+          "sha256": "e45f3d7c205101049db2ac9ef71c7e6503ec0a4972ba8ef4a58563f3b91a014e",
+          "sha1": "db26fa579f1cbd49470010bdf1656a9731073f14",
+          "md5": "83f375af9d0022bbec1328e273608a87"
+        }
+      ]
+    }
+  ]
+}

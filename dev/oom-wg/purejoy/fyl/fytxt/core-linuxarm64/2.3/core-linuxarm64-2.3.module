@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.3/core-2.3.module",
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "core",
+    "version": "2.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "linuxArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-linuxArm64Main.klib",
+          "url": "core-linuxarm64-2.3.klib",
+          "size": 15147,
+          "sha512": "e0b3b30c7b0e25acf8cdc62213e5a72c594a4e48f39879bb3fe1eb61953207de7be39378a7a321a93553ffbf6b06c71bb1a419076d3f122308f25f31387afe34",
+          "sha256": "3f40e8244fa157ee56bceb714e9ab9639a72225120f8709cdaab8b19ff40b59d",
+          "sha1": "e7ec78ef68e07fc1b465292b48dc9aff8c276caa",
+          "md5": "fd02a33a7c0f4a74b5e9d6c7385768c8"
+        }
+      ]
+    },
+    {
+      "name": "linuxArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-linuxarm64-sources.jar",
+          "url": "core-linuxarm64-2.3-sources.jar",
+          "size": 2132,
+          "sha512": "e53de45820b05fab09cb9570343cd851ec86043e53dd69454daf33536400b98e94a5605199a4a094646add4fa5dbf37ec154d80f2150b61ce1756d82cf93f217",
+          "sha256": "dcdbe159473f959d2ca9f4205cc887ef9f4ec8f0bfc8b97f1c87385818236500",
+          "sha1": "d2fd23a30199f0d1f44f9f0b2d004f8890a946fd",
+          "md5": "31109e22f427a8773734fc1cd2448af3"
+        }
+      ]
+    }
+  ]
+}

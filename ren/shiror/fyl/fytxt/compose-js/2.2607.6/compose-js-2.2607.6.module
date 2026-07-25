@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../compose/2.2607.6/compose-2.2607.6.module",
+    "group": "ren.shiror.fyl.fytxt",
+    "module": "compose",
+    "version": "2.2607.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-js.klib",
+          "url": "compose-js-2.2607.6.klib",
+          "size": 15037,
+          "sha512": "45c7b96439af736781af4f6cb3d3d3d11d84e4ac5f570f85bb60a0642dcf2dd8a7e2bd74c7bb8c8015b5b9da4125b117fb528234a3bab43ecae6785d8f80229b",
+          "sha256": "547e9361acb96362d5537e78717654460db1791f695feb3f795e497928dd91d3",
+          "sha1": "3703a8ab65f43a9c792e5ec57f55ab515c4da4f8",
+          "md5": "7d815a23d9e9503d6ba65be1068dbde3"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "ren.shiror.fyl.fytxt",
+          "module": "core",
+          "version": {
+            "requires": "2.2607.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.11.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.11.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-js.klib",
+          "url": "compose-js-2.2607.6.klib",
+          "size": 15037,
+          "sha512": "45c7b96439af736781af4f6cb3d3d3d11d84e4ac5f570f85bb60a0642dcf2dd8a7e2bd74c7bb8c8015b5b9da4125b117fb528234a3bab43ecae6785d8f80229b",
+          "sha256": "547e9361acb96362d5537e78717654460db1791f695feb3f795e497928dd91d3",
+          "sha1": "3703a8ab65f43a9c792e5ec57f55ab515c4da4f8",
+          "md5": "7d815a23d9e9503d6ba65be1068dbde3"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "compose-js-sources.jar",
+          "url": "compose-js-2.2607.6-sources.jar",
+          "size": 2071,
+          "sha512": "680be32b2f6e96bcf39ce866c8278b56318f0a5cfb6729d7cf9191848eb753f1bc8f1f164a65a29d5d4e3b511b5633f30fb0c7f792223a681e6d61d15032a08e",
+          "sha256": "b421c3718176b9f9916a7daaad100ed75941ff1514bda85d45526cc967f1ee76",
+          "sha1": "6d328331f8aae26d90534482a91406237f4dda4d",
+          "md5": "2e9c5a236f56390a5fb72c46e58fd9a2"
+        }
+      ]
+    }
+  ]
+}

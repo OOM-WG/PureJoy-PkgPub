@@ -1,0 +1,78 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "bom",
+    "version": "2.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "core",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "compose",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "systxt",
+          "version": {
+            "requires": "2.4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "core",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "compose",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "systxt",
+          "version": {
+            "requires": "2.4"
+          }
+        }
+      ]
+    }
+  ]
+}

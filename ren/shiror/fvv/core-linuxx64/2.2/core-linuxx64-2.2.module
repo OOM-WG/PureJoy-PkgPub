@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.2/core-2.2.module",
+    "group": "ren.shiror.fvv",
+    "module": "core",
+    "version": "2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21-RC2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-linuxX64Main.klib",
+          "url": "core-linuxx64-2.2.klib",
+          "size": 76762,
+          "sha512": "c0da135e980ade2540be2afac03bb90bb3829b85b67950b75bd19c070f6261cd448556dbe6539acfe8b6359397790cabca9052a42c357b55ad49f60abd3c75a2",
+          "sha256": "53d16e97d1ef9140b0b3f698dcfc6a50b57ea98500be53de6370bc05ecda9f14",
+          "sha1": "8b0c108b6eed1b999da755c0ecde8d4d704b8fca",
+          "md5": "349029566c89a3dbc921ac9804311610"
+        }
+      ]
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-linuxx64-sources.jar",
+          "url": "core-linuxx64-2.2-sources.jar",
+          "size": 8998,
+          "sha512": "78c400f65207e60273b19a34d9f97415f2499330a94cd8095b547394b56663ee0277855898089426357f04cf865fb6c488d14d077b528e13fb16e701b5e7be3c",
+          "sha256": "354afeb1ada2c2beb46e2c3eccb7dc621a7c6b9c983b732926c35684c3098010",
+          "sha1": "358ce7f55705227f350153219d502bf692fdb7c8",
+          "md5": "5679cb3b79025933f36726c08e27b7be"
+        }
+      ]
+    }
+  ]
+}

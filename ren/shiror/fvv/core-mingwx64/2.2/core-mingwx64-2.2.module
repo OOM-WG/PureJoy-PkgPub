@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.2/core-2.2.module",
+    "group": "ren.shiror.fvv",
+    "module": "core",
+    "version": "2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "mingwX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21-RC2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-mingwX64Main.klib",
+          "url": "core-mingwx64-2.2.klib",
+          "size": 76761,
+          "sha512": "5116f7f58d07b3487c6c176cc9e9bd3ae7e46c1d99d48033d47d9c30e44de6b1305b0f2ae7062f7e614a5b3382a241f68bda6b96a2a65b0ce7b6b91000291517",
+          "sha256": "2ac9e961d6af2e24e5bce114c082576f35bac2b6b4cdfda287626c2728fbf86b",
+          "sha1": "4453bda0a48254048fe5950576a78be9d885f7f1",
+          "md5": "2b29bd599c581ba1768d77b1e227c46b"
+        }
+      ]
+    },
+    {
+      "name": "mingwX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-mingwx64-sources.jar",
+          "url": "core-mingwx64-2.2-sources.jar",
+          "size": 8998,
+          "sha512": "78c400f65207e60273b19a34d9f97415f2499330a94cd8095b547394b56663ee0277855898089426357f04cf865fb6c488d14d077b528e13fb16e701b5e7be3c",
+          "sha256": "354afeb1ada2c2beb46e2c3eccb7dc621a7c6b9c983b732926c35684c3098010",
+          "sha1": "358ce7f55705227f350153219d502bf692fdb7c8",
+          "md5": "5679cb3b79025933f36726c08e27b7be"
+        }
+      ]
+    }
+  ]
+}

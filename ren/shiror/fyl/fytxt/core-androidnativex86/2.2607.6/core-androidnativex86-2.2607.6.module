@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.2607.6/core-2.2607.6.module",
+    "group": "ren.shiror.fyl.fytxt",
+    "module": "core",
+    "version": "2.2607.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidNativeX86ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-androidNativeX86Main.klib",
+          "url": "core-androidnativex86-2.2607.6.klib",
+          "size": 16483,
+          "sha512": "9b2ec48dac26d91599af314adeeac96a21f02ed08122c85e349e4898af6b1400c442316a270abad36ae96491eef32fa08bc8473c8e10e51b856aed256e1f4af5",
+          "sha256": "b160be9366b73306932fb5b1db8bdeab7cbed69dd8a8e9ab4defe24bbaa02290",
+          "sha1": "9f61275e47b751cba4e9075d7818bc2cf679c968",
+          "md5": "4a8391d91ae9b48f8fc595e36178a804"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeX86SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-androidnativex86-sources.jar",
+          "url": "core-androidnativex86-2.2607.6-sources.jar",
+          "size": 2247,
+          "sha512": "ebc7b9eabe26b45d9510962b6afde905aaaf6a41c204b70bba071bfb0859236ca675417775a4dfb34099cb163ff7d9cad3a0cec12d4d2e2c1f5f51ee9d4d5987",
+          "sha256": "4217ae53b83a1c191c9fe054d59ceec897cd992e3ecb6dd59f7b0b9cf61ffca2",
+          "sha1": "4d74c2aeeebfa94e289f640a6632fd6176658e27",
+          "md5": "5916ddb6cb42ae22b9455b8ee6b94c91"
+        }
+      ]
+    }
+  ]
+}

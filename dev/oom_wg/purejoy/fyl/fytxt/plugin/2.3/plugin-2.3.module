@@ -1,0 +1,89 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.oom_wg.purejoy.fyl.fytxt",
+    "module": "plugin",
+    "version": "2.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "plugin-2.3.jar",
+          "url": "plugin-2.3.jar",
+          "size": 24092,
+          "sha512": "44619d57a8767aa25bbd8857ffac1f60a7a6c0a63bddce12a0169b50bd3c7892e0100c3059c7c4bc62b8714dac81b20240bd414706dee848d8db5255419105b6",
+          "sha256": "12c24d6750ddde1460da9874bfcddb6b568891b8a40b8e43945c712a857b2720",
+          "sha1": "8efc8996b96786b55d2193f14697be30c400fbb6",
+          "md5": "2e068563d1c26a07d8ae39d31bae37e6"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "ren.shiror.fvv",
+          "module": "core",
+          "version": {
+            "requires": "2.+"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "plugin-2.3.jar",
+          "url": "plugin-2.3.jar",
+          "size": 24092,
+          "sha512": "44619d57a8767aa25bbd8857ffac1f60a7a6c0a63bddce12a0169b50bd3c7892e0100c3059c7c4bc62b8714dac81b20240bd414706dee848d8db5255419105b6",
+          "sha256": "12c24d6750ddde1460da9874bfcddb6b568891b8a40b8e43945c712a857b2720",
+          "sha1": "8efc8996b96786b55d2193f14697be30c400fbb6",
+          "md5": "2e068563d1c26a07d8ae39d31bae37e6"
+        }
+      ]
+    }
+  ]
+}

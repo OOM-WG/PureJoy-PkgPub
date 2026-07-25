@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.4/core-2.4.module",
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "core",
+    "version": "2.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidNativeArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-androidNativeArm64Main.klib",
+          "url": "core-androidnativearm64-2.4.klib",
+          "size": 16178,
+          "sha512": "fec93fcad74f3e6ed20fdb18d0198f7f3da8e43a16fbf7767cbca786b634067c00e6b1688d093ee353714b9b3a6407d378d8c5dcf82a15dfb1854672cbe8f24b",
+          "sha256": "8e86b7013e6cf3bf944da6539ba4648a95da0f3e6739143a08d740a48681e9b7",
+          "sha1": "5308015692b6dae9546f37361c3de35610164e76",
+          "md5": "52616f408b581112e28a3ea20aeb888a"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-androidnativearm64-sources.jar",
+          "url": "core-androidnativearm64-2.4-sources.jar",
+          "size": 2251,
+          "sha512": "f4752cfe465e8e7982ec4af62adba6e52fca1ed6cd98da1b0cc633e5d4bf27b924d56d8183e232b9c3f303c3a09fa7352ef9aead21bd3398f8044d2fa245d3c2",
+          "sha256": "8ff9803118708a0ca82d026723c7b95f6dc36208a72a2f0fb448963e2fdeaa0e",
+          "sha1": "9f1baef1d454cdb23058486ed9d56dc616ce26eb",
+          "md5": "effbf9037cf2eb7a989aaea962fe1c30"
+        }
+      ]
+    }
+  ]
+}

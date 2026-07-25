@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../compose/2.4/compose-2.4.module",
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "compose",
+    "version": "2.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "core",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-iosArm64Main.klib",
+          "url": "compose-iosarm64-2.4.klib",
+          "size": 14942,
+          "sha512": "cfcd8a6adaa7c03ba2d39c8d25dab4c83130a053b85b58990e6dcc25923951b920d3dea06d6b4053b194e91735340b384272fa1b461ab6feee97116021f9e065",
+          "sha256": "a1284aef16066e0ef8ef772c4d13326dfa5c084b6fa8f9df4ac0672ecc521511",
+          "sha1": "814af6459b3433c09f20ec4b0366b65703f73288",
+          "md5": "e6dfa5f8fbcff5446e68ec86403fbc97"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "compose-iosarm64-sources.jar",
+          "url": "compose-iosarm64-2.4-sources.jar",
+          "size": 2099,
+          "sha512": "7a6be1f73bcff433b6148107a04550863e5712f64c3fb0ccb1c7fd2242e861c9cf12b15831876473af5232d430f3ec0de1e20da088e83a0d4ee2e9e85fb7ea14",
+          "sha256": "4253506e010e137ac7809d7abac5a746293e429309e23529375639da9d410e99",
+          "sha1": "a4450061f0c11b559f902b1aaa814097cf7f1bb6",
+          "md5": "c3ae5762a4e2b3e608541a2b96ef2825"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "core",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-iosarm64-metadata.jar",
+          "url": "compose-iosarm64-2.4-metadata.jar",
+          "size": 3242,
+          "sha512": "36885ccd8989631b28a5a4d4519126bc7b054e618d42ac611ebef4643f39b3038300f3cc20e371b0755d7977f7111c7d1190abc843cbbc191d5e54486ca75b11",
+          "sha256": "019937cfbfab7bf17aabb7952adae29b08dda35fd0d761390c55ac152faff6c2",
+          "sha1": "00e46cadbeb2c02636ff18ae778119816128e238",
+          "md5": "2a4ec9d4163c090c939dc484ab6574e0"
+        }
+      ]
+    }
+  ]
+}

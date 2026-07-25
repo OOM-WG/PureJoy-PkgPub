@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.4/core-2.4.module",
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "core",
+    "version": "2.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "watchosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-watchosSimulatorArm64Main.klib",
+          "url": "core-watchossimulatorarm64-2.4.klib",
+          "size": 14488,
+          "sha512": "c721d13c610bc4b11630cb7b0d1133645f4fabacd6660a19fe0f4a3745c3e143b7407aca412def5e9022a8385a5830efc18dc6b5794625f0d4fcfe2df95ada61",
+          "sha256": "d609aa8f2ff0ee343ff5054f63e0d891f8d5e9d0a3b42f11360e8dfc3cf03d8a",
+          "sha1": "6913b19e88ff36084a1933eae4f5e29232066202",
+          "md5": "caab7c983e2e5a6973bb824d74bf6dbb"
+        }
+      ]
+    },
+    {
+      "name": "watchosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-watchossimulatorarm64-sources.jar",
+          "url": "core-watchossimulatorarm64-2.4-sources.jar",
+          "size": 2067,
+          "sha512": "09424c3eb8f603b9ff26d243fc9f07d9ca4dde587efbf7b97955b4fddf1dd151fb270deac41ace5612aa5acec05a4a51d82191312a52d7782bf9ae733617f71f",
+          "sha256": "6b8e77652ae89cdeb0443395804bf449c9d1d8a6336695ac7370e1589dfe827d",
+          "sha1": "615b0cf0911375825826bc0bc34c88fb3baab401",
+          "md5": "8b7531dbe787e932f77e2d18ea67b235"
+        }
+      ]
+    },
+    {
+      "name": "watchosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-watchossimulatorarm64-metadata.jar",
+          "url": "core-watchossimulatorarm64-2.4-metadata.jar",
+          "size": 2448,
+          "sha512": "5a744cc6a36762b0a6d38ac83343977751b41f5dba1a7fff77a75d7a3f0e6c764573cc8baa8b26381f43e0488faf441ac23ac51f4aca80a5c8dd563fa9034614",
+          "sha256": "8afc00c2852001fe465a7002fb28ccc2f84b01cdc3cfb8be14cbe5ecad074813",
+          "sha1": "73c3961d9b0ccca42e02d9d3f1ae7adc59b632ec",
+          "md5": "677850743532a5a64f5e3e05424168f5"
+        }
+      ]
+    }
+  ]
+}

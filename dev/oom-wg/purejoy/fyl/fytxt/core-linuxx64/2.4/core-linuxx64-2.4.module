@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.4/core-2.4.module",
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "core",
+    "version": "2.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-linuxX64Main.klib",
+          "url": "core-linuxx64-2.4.klib",
+          "size": 15133,
+          "sha512": "7c9e40fd859e6da16ab053aa28e5f2c70008a1be8bd0fb6d8397ab76c895088e6614b2b8c188947f618d3771a62e3f87e43a9a87611e32f12112a22eea8dfd25",
+          "sha256": "cd3e5b47bf39b6c7136ce1474b36db9de59c0c058ed8ae19f92141245ed53e7d",
+          "sha1": "fc0f821f81a6ed1220662dea613929f180f0d7d6",
+          "md5": "8f70d182782af2a042c53aaaaee1b0e5"
+        }
+      ]
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-linuxx64-sources.jar",
+          "url": "core-linuxx64-2.4-sources.jar",
+          "size": 2132,
+          "sha512": "e53de45820b05fab09cb9570343cd851ec86043e53dd69454daf33536400b98e94a5605199a4a094646add4fa5dbf37ec154d80f2150b61ce1756d82cf93f217",
+          "sha256": "dcdbe159473f959d2ca9f4205cc887ef9f4ec8f0bfc8b97f1c87385818236500",
+          "sha1": "d2fd23a30199f0d1f44f9f0b2d004f8890a946fd",
+          "md5": "31109e22f427a8773734fc1cd2448af3"
+        }
+      ]
+    }
+  ]
+}

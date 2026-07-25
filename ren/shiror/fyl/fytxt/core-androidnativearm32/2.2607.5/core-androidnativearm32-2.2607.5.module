@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.2607.5/core-2.2607.5.module",
+    "group": "ren.shiror.fyl.fytxt",
+    "module": "core",
+    "version": "2.2607.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidNativeArm32ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-androidNativeArm32Main.klib",
+          "url": "core-androidnativearm32-2.2607.5.klib",
+          "size": 16495,
+          "sha512": "e54be737c7917fb18f00084e678ade576b69f52daef8ce3d17f0b2589c49aa715bfb94f23cef5667884932463c6984d53d65e81920ec56a646a4606a269ae890",
+          "sha256": "bcb02e059142bac00d2dd96cab13b55171346fd94290a9ed65a6a1f3f87174fe",
+          "sha1": "f1adcb0e08d78f529f7b2a5251024fd130747dac",
+          "md5": "75e7c6c8847f9171e9d3b6f3f1a1490d"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-androidnativearm32-sources.jar",
+          "url": "core-androidnativearm32-2.2607.5-sources.jar",
+          "size": 2247,
+          "sha512": "ebc7b9eabe26b45d9510962b6afde905aaaf6a41c204b70bba071bfb0859236ca675417775a4dfb34099cb163ff7d9cad3a0cec12d4d2e2c1f5f51ee9d4d5987",
+          "sha256": "4217ae53b83a1c191c9fe054d59ceec897cd992e3ecb6dd59f7b0b9cf61ffca2",
+          "sha1": "4d74c2aeeebfa94e289f640a6632fd6176658e27",
+          "md5": "5916ddb6cb42ae22b9455b8ee6b94c91"
+        }
+      ]
+    }
+  ]
+}

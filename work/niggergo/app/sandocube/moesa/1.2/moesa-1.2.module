@@ -1,0 +1,94 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "work.niggergo.app.sandocube",
+    "module": "moesa",
+    "version": "1.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "moesa-1.2.aar",
+          "url": "moesa-1.2.aar",
+          "size": 5403,
+          "sha512": "74db341af362b7982e8efe4c9e024e7b7b474315b81f247bea60ef3627d016a07190590db4cdd3b7ba0e7a97dde0df755fdf11db812fcba3da4b102f544ed0f0",
+          "sha256": "5f6b5db6bf103f9a011eac9a6642be82ffca3402a8f464905578a766d34cdd90",
+          "sha1": "80703c1c42cb702d5b9bb8afba009f4cac8a002f",
+          "md5": "a70f3a60d79022c9304218d954759be6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "work.niggergo.app",
+          "module": "gendoki",
+          "version": {
+            "requires": "1.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "moesa-1.2.aar",
+          "url": "moesa-1.2.aar",
+          "size": 5403,
+          "sha512": "74db341af362b7982e8efe4c9e024e7b7b474315b81f247bea60ef3627d016a07190590db4cdd3b7ba0e7a97dde0df755fdf11db812fcba3da4b102f544ed0f0",
+          "sha256": "5f6b5db6bf103f9a011eac9a6642be82ffca3402a8f464905578a766d34cdd90",
+          "sha1": "80703c1c42cb702d5b9bb8afba009f4cac8a002f",
+          "md5": "a70f3a60d79022c9304218d954759be6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "moesa-1.2-sources.jar",
+          "url": "moesa-1.2-sources.jar",
+          "size": 2119,
+          "sha512": "9da27dba8e3a782bfe6f877e1c1510d86fa48a0048705aa3b9d254578117945a908a6407e00a42174eda7512b1b2ddcd9bcd772f151ce3b133b87d0efcd801c3",
+          "sha256": "da361f87957e1b4b7d385ec4314b62eb2d9933a155268342dc661a5052cb0fe2",
+          "sha1": "184fd1e8b16694af9eb47673163cc6536687a7d0",
+          "md5": "0ffcbd6f74cbe26fd340c91345f66285"
+        }
+      ]
+    }
+  ]
+}

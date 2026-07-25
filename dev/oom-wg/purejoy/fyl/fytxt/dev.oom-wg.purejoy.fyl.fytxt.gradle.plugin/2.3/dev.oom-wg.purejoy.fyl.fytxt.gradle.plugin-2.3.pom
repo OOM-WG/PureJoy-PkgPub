@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.oom-wg.purejoy.fyl.fytxt</groupId>
+  <artifactId>dev.oom-wg.purejoy.fyl.fytxt.gradle.plugin</artifactId>
+  <version>2.3</version>
+  <packaging>pom</packaging>
+  <name>PureJoy FYTxt Gradle Plugin</name>
+  <description>Kotlin Multi Language Framework</description>
+  <dependencies>
+    <dependency>
+      <groupId>dev.oom_wg.purejoy.fyl.fytxt</groupId>
+      <artifactId>plugin</artifactId>
+      <version>2.3</version>
+    </dependency>
+  </dependencies>
+</project>

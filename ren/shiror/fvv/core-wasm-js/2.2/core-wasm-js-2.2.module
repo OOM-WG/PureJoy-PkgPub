@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.2/core-2.2.module",
+    "group": "ren.shiror.fvv",
+    "module": "core",
+    "version": "2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21-RC2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-wasm-js.klib",
+          "url": "core-wasm-js-2.2.klib",
+          "size": 76546,
+          "sha512": "a01d380a8b6e191a31de803d1d883435cfe555472a456958718886fc4169785750314908c4486bcfeff1cce7cabe5633be43adc0e005af49c066dc538306abac",
+          "sha256": "813265ced3727a05824318ceeeb4d8e5fa949f14511f4925393cecd04dd35636",
+          "sha1": "e470c03c0690e5f21bebc8d4acae7debb4bcac36",
+          "md5": "4e5e8866127612bdf38f80fa8759642d"
+        }
+      ]
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21-RC2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-wasm-js.klib",
+          "url": "core-wasm-js-2.2.klib",
+          "size": 76546,
+          "sha512": "a01d380a8b6e191a31de803d1d883435cfe555472a456958718886fc4169785750314908c4486bcfeff1cce7cabe5633be43adc0e005af49c066dc538306abac",
+          "sha256": "813265ced3727a05824318ceeeb4d8e5fa949f14511f4925393cecd04dd35636",
+          "sha1": "e470c03c0690e5f21bebc8d4acae7debb4bcac36",
+          "md5": "4e5e8866127612bdf38f80fa8759642d"
+        }
+      ]
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "files": [
+        {
+          "name": "core-wasm-js-sources.jar",
+          "url": "core-wasm-js-2.2-sources.jar",
+          "size": 8998,
+          "sha512": "78c400f65207e60273b19a34d9f97415f2499330a94cd8095b547394b56663ee0277855898089426357f04cf865fb6c488d14d077b528e13fb16e701b5e7be3c",
+          "sha256": "354afeb1ada2c2beb46e2c3eccb7dc621a7c6b9c983b732926c35684c3098010",
+          "sha1": "358ce7f55705227f350153219d502bf692fdb7c8",
+          "md5": "5679cb3b79025933f36726c08e27b7be"
+        }
+      ]
+    }
+  ]
+}

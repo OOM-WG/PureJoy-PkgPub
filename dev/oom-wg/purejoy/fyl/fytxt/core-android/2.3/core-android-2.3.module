@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.3/core-2.3.module",
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "core",
+    "version": "2.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core.aar",
+          "url": "core-android-2.3.aar",
+          "size": 14224,
+          "sha512": "f4d55014e52fba80a58d835a0e3756456ca7c4bd6f5fb6d2bc51c1c34d3a87acb27334bce2752fed39667671a2e3bb0ce3a99fc9852d1de285e95cd5be874639",
+          "sha256": "31095b9cb267c4be87aeb42981ecfe478b65cc64b2dea872714273926b7758cd",
+          "sha1": "4c1a05ce84cc1d122c43ab9148f12881f2e20879",
+          "md5": "5342a4e120ce1ff10e70c04384d1922c"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core.aar",
+          "url": "core-android-2.3.aar",
+          "size": 14224,
+          "sha512": "f4d55014e52fba80a58d835a0e3756456ca7c4bd6f5fb6d2bc51c1c34d3a87acb27334bce2752fed39667671a2e3bb0ce3a99fc9852d1de285e95cd5be874639",
+          "sha256": "31095b9cb267c4be87aeb42981ecfe478b65cc64b2dea872714273926b7758cd",
+          "sha1": "4c1a05ce84cc1d122c43ab9148f12881f2e20879",
+          "md5": "5342a4e120ce1ff10e70c04384d1922c"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "core-android-sources.jar",
+          "url": "core-android-2.3-sources.jar",
+          "size": 2248,
+          "sha512": "769aa1aea34233024c14f404f6b52b245fd719e279870a93e0aa5aa96dbd4b86e60301fb4dcd022e5f1ab300c9850c020ddcdc802d24e55428c2b9f9e3f002e5",
+          "sha256": "b7e61591d1b353b920c6c21f5ff172bb70b56c06ca01ddc2628ac68fcd6fb849",
+          "sha1": "9189fc8f90dac25d2f4cd6311b991db9cf157678",
+          "md5": "764b20516aabf3bfbc7e9b9ef3c9ec67"
+        }
+      ]
+    }
+  ]
+}

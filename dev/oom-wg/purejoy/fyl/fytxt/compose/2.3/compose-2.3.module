@@ -1,0 +1,390 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.oom-wg.purejoy.fyl.fytxt",
+    "module": "compose",
+    "version": "2.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "dev.oom-wg.purejoy.fyl.fytxt",
+          "module": "core",
+          "version": {
+            "requires": "2.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.+"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.+"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-metadata.jar",
+          "url": "compose-2.3.jar",
+          "size": 6088,
+          "sha512": "09216a06da4a60302de05d549d32a794a9a60f46f2075a51cf645a6d41328e9aba51724288cca8b53b3405da800c206041d52828c6b5d2fc1a82da63919cc198",
+          "sha256": "3a99c0299b2d8c64353ab1623208de001b923f8febb712cc745ccc2ac582ec5a",
+          "sha1": "969b85c9fa6cdb1dbd3e1c421699447f9cfc91e5",
+          "md5": "a601474ff3ad7b773fd8aaf029778587"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "compose-kotlin-sources.jar",
+          "url": "compose-2.3-sources.jar",
+          "size": 2742,
+          "sha512": "dd79a91489e4568be3284a151ea8bcbd17ce1fcd31ce572cbc0f49ceef052a13456f24d18740f284174b343f0fd2295d7bf6f45b9ee71fd29e939b38e86fc60f",
+          "sha256": "657979fd5a4c85669e1ba108fed0b44a443a6a57ba675455c6376084011290de",
+          "sha1": "1c27079e467a15c27f2ce59c1c3bfcee7d9ca823",
+          "md5": "45cc42c12c4a702ef970e5a49bcc6a57"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-android/2.3/compose-android-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-android",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-android/2.3/compose-android-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-android",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-android/2.3/compose-android-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-android",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-iosarm64/2.3/compose-iosarm64-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-iosarm64",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-iosarm64/2.3/compose-iosarm64-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-iosarm64",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-iosarm64/2.3/compose-iosarm64-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-iosarm64",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-iossimulatorarm64/2.3/compose-iossimulatorarm64-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-iossimulatorarm64",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-iossimulatorarm64/2.3/compose-iossimulatorarm64-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-iossimulatorarm64",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-iossimulatorarm64/2.3/compose-iossimulatorarm64-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-iossimulatorarm64",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../compose-js/2.3/compose-js-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-js",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../compose-js/2.3/compose-js-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-js",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../compose-js/2.3/compose-js-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-js",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-jvm/2.3/compose-jvm-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-jvm",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-jvm/2.3/compose-jvm-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-jvm",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-jvm/2.3/compose-jvm-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-jvm",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../compose-wasm-js/2.3/compose-wasm-js-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-wasm-js",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../compose-wasm-js/2.3/compose-wasm-js-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-wasm-js",
+        "version": "2.3"
+      }
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../compose-wasm-js/2.3/compose-wasm-js-2.3.module",
+        "group": "dev.oom-wg.purejoy.fyl.fytxt",
+        "module": "compose-wasm-js",
+        "version": "2.3"
+      }
+    }
+  ]
+}

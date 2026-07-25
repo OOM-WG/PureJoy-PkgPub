@@ -1,0 +1,96 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ren.shiror.fyl.fytxt",
+    "module": "plugin",
+    "version": "2.2607.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "plugin-2.2607.6.jar",
+          "url": "plugin-2.2607.6.jar",
+          "size": 43616,
+          "sha512": "03be76922c20bee285d46a3c5863a91b518de65e7adc9247b4e2bb5c4bb9ced1850230aa4344a4ffc64c1ec1aeaeb343398626e24acb8b0b8e00758aab4d36c9",
+          "sha256": "8a6ea0e395fd8fd3cfd2481d44b30fcd2f73d4d3eb616013bebf78e3de54e379",
+          "sha1": "7c560d0fa5973dc37529fb1e21c0c8e362b2079b",
+          "md5": "c93b3684474b99dfc18edd3b7e7a8367"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "ren.shiror.fvv",
+          "module": "core",
+          "version": {
+            "requires": "2.+"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "kotlinpoet",
+          "version": {
+            "requires": "2.3.+"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "plugin-2.2607.6.jar",
+          "url": "plugin-2.2607.6.jar",
+          "size": 43616,
+          "sha512": "03be76922c20bee285d46a3c5863a91b518de65e7adc9247b4e2bb5c4bb9ced1850230aa4344a4ffc64c1ec1aeaeb343398626e24acb8b0b8e00758aab4d36c9",
+          "sha256": "8a6ea0e395fd8fd3cfd2481d44b30fcd2f73d4d3eb616013bebf78e3de54e379",
+          "sha1": "7c560d0fa5973dc37529fb1e21c0c8e362b2079b",
+          "md5": "c93b3684474b99dfc18edd3b7e7a8367"
+        }
+      ]
+    }
+  ]
+}

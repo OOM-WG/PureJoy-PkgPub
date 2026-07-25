@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/2.2607.6/core-2.2607.6.module",
+    "group": "ren.shiror.fyl.fytxt",
+    "module": "core",
+    "version": "2.2607.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-linuxX64Main.klib",
+          "url": "core-linuxx64-2.2607.6.klib",
+          "size": 15452,
+          "sha512": "aaa22cc3b55c979f164f66442798f3b764c5c074bcde2a22fcd427b3aefe4a6a7936cece2fe1ae21632d0c7ebce6d386ac5137d07303728367fb4fa6584dde9e",
+          "sha256": "11e27b8771e278087313f2f61d8ea7c7a3d022007ad565dad132c7aa0508416f",
+          "sha1": "6a093f55bd333080d86da296c6b354bc2d1538bd",
+          "md5": "02e36c4b69ef6bb401d0e8181b994c85"
+        }
+      ]
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-linuxx64-sources.jar",
+          "url": "core-linuxx64-2.2607.6-sources.jar",
+          "size": 2126,
+          "sha512": "46715b99c1f2442299cd284ffa1256f6d105435cb2615a1dbbb21e22dbea0a15546ae0c8885d2f5ae1f81fd5966ef5c271192bea5d0516cdfd47b5515152bade",
+          "sha256": "5605b1187e1972841323981d49601ab9afdb6719b3d6e4ea6b329fa5f8d097ad",
+          "sha1": "1930c580fd7a828d97dbb41e79dea118fd62e159",
+          "md5": "f85b1b7c08842f91da28132029781a9a"
+        }
+      ]
+    }
+  ]
+}
